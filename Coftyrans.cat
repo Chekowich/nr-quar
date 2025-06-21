@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="8d1f-64e7-d1e6-178f" name="Coftyrans" gameSystemId="sys-e004-1281-bc3b-277e" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="Coftyrans" id="3aae-ae37-556f-ff92" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Basic" hidden="false" id="f7a6-b1e1-0d12-e505" targetId="a046-09d8-98b5-102f" type="categoryEntry"/>
+        <categoryLink name="Command" hidden="false" id="0fae-aea2-6b45-8c5e" targetId="ba6f-dc17-ff3e-7fe6" type="categoryEntry"/>
+        <categoryLink name="Specialist" hidden="false" id="a167-7e1d-6120-7383" targetId="f1d2-6ff0-b496-3900" type="categoryEntry"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <categoryEntries>
+    <categoryEntry name="Basic" id="a046-09d8-98b5-102f" hidden="false"/>
+    <categoryEntry name="Command" id="ba6f-dc17-ff3e-7fe6" hidden="false"/>
+    <categoryEntry name="Specialist" id="f1d2-6ff0-b496-3900" hidden="false"/>
+  </categoryEntries>
+</catalogue>

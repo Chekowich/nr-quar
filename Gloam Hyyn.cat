@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="104d-37c6-5b94-65b2" name="Gloam Hyyn" gameSystemId="sys-e004-1281-bc3b-277e" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry name="Gloam Hyyn" id="56ec-609a-6f85-773c" hidden="false"/>
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry name="Gloam Hyyn" id="d504-09b2-b2fa-0b4c" hidden="false" childForcesLabel="">
+      <categoryLinks>
+        <categoryLink name="Gloam Hyyn" hidden="false" id="74c4-ac7b-975b-1c45" targetId="56ec-609a-6f85-773c" type="categoryEntry"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+</catalogue>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="9149-f5e5-3310-7a92" name="Gwynt" gameSystemId="sys-e004-1281-bc3b-277e" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="Gwynt" id="c5d6-d5bd-22f2-9c44" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Gwynt" hidden="false" id="0478-e864-eef8-736a" targetId="497f-cc5f-110f-40e8" type="categoryEntry"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <categoryEntries>
+    <categoryEntry name="Gwynt" id="497f-cc5f-110f-40e8" hidden="false"/>
+  </categoryEntries>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Rhyfler" hidden="false" id="fbfd-0773-e5c4-1c47" defaultAmount="6" sortIndex="1">
+      <categoryLinks>
+        <categoryLink targetId="497f-cc5f-110f-40e8" id="4300-8d16-5362-bcd8" primary="true" name="Gwynt"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Harlech" id="1720-7305-00a1-15f3" hidden="false" type="profile" targetId="4f66-3e6f-de8b-ab59"/>
+        <infoLink name="Steady Under Fire" id="f279-7787-fb90-c346" hidden="false" type="rule" targetId="04d1-b66d-34ad-9f98"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Rhyfler" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="2d8b-7f6f-7404-629f">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">12</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">2d6-1</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Steady Under
+Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="25"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Yawdryl" hidden="false" id="6224-d6a8-407f-886a" defaultAmount="1" sortIndex="3">
+      <categoryLinks>
+        <categoryLink targetId="497f-cc5f-110f-40e8" id="60ed-4959-c97d-61d9" primary="true" name="Gwynt"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Doru" id="6054-0cc1-3dc5-02d0" hidden="false" type="profile" targetId="083b-c66f-f2a4-a21f"/>
+        <infoLink name="Blade" id="1f6b-955c-1e26-d8b4" hidden="false" type="profile" targetId="91cf-8a4e-805a-c162"/>
+        <infoLink name="Leader (X/Y)" id="8220-1ff3-f6b7-c257" hidden="false" type="rule" targetId="0020-c672-c3f4-71fd"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Yawdryl" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="59c4-f884-052c-9bb5">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">13</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">2d6</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Leader (3/4)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="38"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56aa-020c-acd0-c2b3"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="1" field="56aa-020c-acd0-c2b3"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Scattergunner" hidden="false" id="b874-d0bd-925d-39d4" sortIndex="5">
+      <categoryLinks>
+        <categoryLink targetId="497f-cc5f-110f-40e8" id="1816-95ef-c055-b11d" primary="true" name="Gwynt"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="SG-3 Scattergun" id="278d-9d85-ff87-1ec4" hidden="false" type="profile" targetId="2695-9cc0-a349-0a26"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Scattergunner" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="f5f8-07fd-dd8b-1e67">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">12</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">1d6+1</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="34"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8de2-e295-6d9b-4d52"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="2" field="8de2-e295-6d9b-4d52"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="is-Caerten" hidden="false" id="0ce3-7c96-31a7-9b7c" sortIndex="7">
+      <categoryLinks>
+        <categoryLink targetId="497f-cc5f-110f-40e8" id="090c-0850-3710-9151" primary="true" name="Gwynt"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Pistol" id="0663-e264-a394-f7bb" hidden="false" type="profile" targetId="5b02-0c8a-5dcf-7d4a"/>
+        <infoLink name="Leader (X/Y)" id="46bf-2e3c-57bf-9157" hidden="false" type="rule" targetId="0020-c672-c3f4-71fd"/>
+        <infoLink name="Sword" id="83d4-e07b-57d2-5e11" hidden="false" type="profile" targetId="fc4c-ffbc-b544-79ea"/>
+      </infoLinks>
+      <profiles>
+        <profile name="is-Caerten" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="6406-776f-3f72-9b07">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">12</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">2d6</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Leader (2/5)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="28"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf1f-c4d8-cc6e-e536"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="1" field="bf1f-c4d8-cc6e-e536"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="RCO Gunner" hidden="false" id="8e03-7be1-9826-32cd" sortIndex="6">
+      <categoryLinks>
+        <categoryLink targetId="497f-cc5f-110f-40e8" id="8479-5164-3687-6cab" primary="true" name="Gwynt"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="RCO m60" id="e747-e32b-f48a-7408" hidden="false" type="profile" targetId="6ee4-4d14-a9d0-cd90"/>
+      </infoLinks>
+      <profiles>
+        <profile name="RCO Gunner" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="b88b-82af-7f4c-aa8a">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">12</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">1d6+1</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="70"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efab-0c4b-c38a-2949"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="1" field="efab-0c4b-c38a-2949"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Milwer" hidden="false" id="f457-681b-7d8b-53f0" defaultAmount="1" sortIndex="2">
+      <categoryLinks>
+        <categoryLink targetId="497f-cc5f-110f-40e8" id="1c5b-db36-a9dd-950d" primary="true" name="Gwynt"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Doru" id="7cd6-f2d5-7e65-2107" hidden="false" type="profile" targetId="083b-c66f-f2a4-a21f"/>
+        <infoLink name="Leader (X/Y)" id="21e8-4cc4-046a-e8eb" hidden="false" type="rule" targetId="0020-c672-c3f4-71fd"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Milwer" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="5645-7483-6158-9ecb">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">12</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">1d6+1</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Leader (2/3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="30"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="800d-4367-5937-c271"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="1" field="800d-4367-5937-c271"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Grenadier" hidden="false" id="f0f2-de3c-927f-0ffc" defaultAmount="2" sortIndex="4">
+      <categoryLinks>
+        <categoryLink targetId="497f-cc5f-110f-40e8" id="8a1b-62a4-7696-0d7e" primary="true" name="Gwynt"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Harlech" id="97c4-6b84-7e5b-39b3" hidden="false" type="profile" targetId="4f66-3e6f-de8b-ab59"/>
+        <infoLink name="Grenadier" id="923f-7464-cbd9-57de" hidden="false" type="rule" targetId="d432-10ca-db84-367a"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Grenadier" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="b0cb-9b05-ccbc-e0e3">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">12</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Grenadier</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="28"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="504f-0f76-e885-a29f"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="2" field="504f-0f76-e885-a29f"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Standard Bearer" hidden="false" id="3e0e-e9ea-3e2c-e7a6" defaultAmount="0" sortIndex="8">
+      <categoryLinks>
+        <categoryLink targetId="497f-cc5f-110f-40e8" id="c357-c9ae-7ce5-30d4" primary="true" name="Gwynt"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Doru" id="7bf0-6718-24d5-3fce" hidden="false" type="profile" targetId="083b-c66f-f2a4-a21f"/>
+        <infoLink name="Standard" id="966c-ec37-f09b-eb1f" hidden="false" type="rule" targetId="34a4-34b4-0c15-a373"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Standard Bearer" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="0e55-de3e-415f-c16a">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">12</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Standard</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="35"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a50e-f355-d7d7-5591"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="1" field="a50e-f355-d7d7-5591"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Squirrel Handler" hidden="false" id="62df-3b50-b745-02c9" defaultAmount="0" sortIndex="9">
+      <categoryLinks>
+        <categoryLink targetId="497f-cc5f-110f-40e8" id="d0a2-5dcf-c60d-5506" primary="true" name="Gwynt"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Harlech" id="11ca-0e5f-e140-7bef" hidden="false" type="profile" targetId="4f66-3e6f-de8b-ab59"/>
+        <infoLink name="PykPyk (X)" id="9001-bd61-2b0c-869b" hidden="false" type="rule" targetId="806b-7565-3ad6-e2ee"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Squirrel Handler" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="9ea9-a5b7-eec8-addc">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">12</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">4</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">PykPyk(3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="30"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c87-b94d-02ba-d4c5"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="1" field="3c87-b94d-02ba-d4c5"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

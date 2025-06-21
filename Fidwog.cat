@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="db84-4fd9-0bef-9d67" name="Fidwog" gameSystemId="sys-e004-1281-bc3b-277e" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="Fidwog" id="cf44-1b12-f1c7-9638" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Fidwog" hidden="false" id="6027-a6f6-c720-b646" targetId="2911-f5b2-5e7e-e73e" type="categoryEntry"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <categoryEntries>
+    <categoryEntry name="Fidwog" id="2911-f5b2-5e7e-e73e" hidden="false"/>
+  </categoryEntries>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Gaefyn" hidden="false" id="68f1-18d2-89d8-805e" defaultAmount="0" sortIndex="1">
+      <categoryLinks>
+        <categoryLink targetId="2911-f5b2-5e7e-e73e" id="909f-6214-7edf-d4eb" primary="true" name="Fidwog"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Sprygyt Mk3 “Sketych”" id="acd2-714a-7f8e-4cf6" hidden="false" type="profile" targetId="5090-d914-d8b8-1b31"/>
+        <infoLink name="Support" id="c5ad-4ef2-2da3-f8e7" hidden="false" type="rule" targetId="4193-ea01-854d-cd42"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Gaefyn" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="b5b4-4dfb-5c80-e632">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">12</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">1d6+1</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="25"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Squirrel Handler" hidden="false" id="2ada-4be9-8272-31f3" defaultAmount="0" sortIndex="7">
+      <categoryLinks>
+        <categoryLink targetId="2911-f5b2-5e7e-e73e" id="0309-ff12-c03e-b520" primary="true" name="Fidwog"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Pistol" id="da52-4b9b-90dc-3f8f" hidden="false" type="profile" targetId="5b02-0c8a-5dcf-7d4a"/>
+        <infoLink name="PykPyk (X)" id="6a5b-5dad-a666-14d1" hidden="false" type="rule" targetId="806b-7565-3ad6-e2ee"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Squirrel Handler" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="8633-9285-a513-c81d">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">12</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">1d6</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">PykPyk(3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="29"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75cf-6823-ee26-1ad8"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="1" field="75cf-6823-ee26-1ad8"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Standard Bearer" hidden="false" id="78e3-7cea-72ee-66e3" defaultAmount="0" sortIndex="6">
+      <categoryLinks>
+        <categoryLink targetId="2911-f5b2-5e7e-e73e" id="1685-fb23-2f88-86bb" primary="true" name="Fidwog"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Bogen" id="ffdc-45fd-19fa-b585" hidden="false" type="profile" targetId="2701-c7b5-01da-5be7"/>
+        <infoLink name="Standard" id="b284-3cd3-ff8e-6879" hidden="false" type="rule" targetId="34a4-34b4-0c15-a373"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Standard Bearer" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="b98c-632d-ef4e-bc85">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">12</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Standard</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="29"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ed9-cf63-633c-7520"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="1" field="5ed9-cf63-633c-7520"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="han-Gaefyn" hidden="false" id="5dbc-e9a6-a7e4-0b49" defaultAmount="0" sortIndex="2">
+      <categoryLinks>
+        <categoryLink targetId="2911-f5b2-5e7e-e73e" id="00e7-c91f-a269-2662" primary="true" name="Fidwog"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Bensa F6" id="ca8a-0ac9-5a48-932c" hidden="false" type="profile" targetId="a365-ef9e-6f5a-d4b2"/>
+      </infoLinks>
+      <profiles>
+        <profile name="han-Gaefyn" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="b7b9-d6b0-58d5-29ae">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">12</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">1d6+1</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="30"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce58-a9b7-70e1-0022"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="1" field="ce58-a9b7-70e1-0022"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Marksquar" hidden="false" id="684b-a7bb-55a0-20c2" defaultAmount="0" sortIndex="3">
+      <categoryLinks>
+        <categoryLink targetId="2911-f5b2-5e7e-e73e" id="87fa-cbed-c795-8fd8" primary="true" name="Fidwog"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="is-Haem Long" id="f115-4f14-3cc9-106d" hidden="false" type="profile" targetId="fbe6-ded3-df42-a4f8"/>
+        <infoLink name="Dead-eye" id="a787-b784-9880-07c9" hidden="false" type="rule" targetId="2294-73f5-f12e-70f3"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Marksquar" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="f1e3-2065-5bf4-b8d2">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">12</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">1d6+1</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Dead-eye</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="35"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cae5-108a-bca9-28ba"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="1" field="cae5-108a-bca9-28ba"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Crown Milwer" hidden="false" id="d252-8219-e2bb-7329" defaultAmount="0" sortIndex="4">
+      <categoryLinks>
+        <categoryLink targetId="2911-f5b2-5e7e-e73e" id="af47-8d71-cc3c-596d" primary="true" name="Fidwog"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Sprygyt Mk3 “Sketych”" id="c1c2-3d1e-bd9a-d049" hidden="false" type="profile" targetId="5090-d914-d8b8-1b31"/>
+        <infoLink name="Support" id="72f4-d502-b7ca-5753" hidden="false" type="rule" targetId="4193-ea01-854d-cd42"/>
+        <infoLink name="Leader (X/Y)" id="e26e-13c9-8b22-4880" hidden="false" type="rule" targetId="0020-c672-c3f4-71fd"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Crown Milwer" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="b141-8ef7-3543-dd97">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">12</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">1d6+1</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Leader (3/5), Support</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="32"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="705c-a8bf-983f-34cb"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="1" field="705c-a8bf-983f-34cb"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Yawdryl" hidden="false" id="b95d-3819-b276-b8d3" defaultAmount="0" sortIndex="4">
+      <categoryLinks>
+        <categoryLink targetId="2911-f5b2-5e7e-e73e" id="643f-fe83-075a-03b4" primary="true" name="Fidwog"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Sprygyt Mk3 “Sketych”" id="567e-db8a-ac9b-fefe" hidden="false" type="profile" targetId="5090-d914-d8b8-1b31"/>
+        <infoLink name="Leader (X/Y)" id="a04c-9c22-c014-164c" hidden="false" type="rule" targetId="0020-c672-c3f4-71fd"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Yawdryl" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="7f35-b7f7-47c9-f90e">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">13</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">1d6+1</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Leader (4/6)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="35"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68c3-c289-6671-1170"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="1" field="68c3-c289-6671-1170"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Miner" hidden="false" id="a771-7a96-c22b-e415" defaultAmount="0" sortIndex="8">
+      <categoryLinks>
+        <categoryLink targetId="2911-f5b2-5e7e-e73e" id="5f8c-5816-0011-4bbf" primary="true" name="Fidwog"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="FF10" id="a2de-0bc5-3c17-2a65" hidden="false" type="profile" targetId="e649-b7f9-56ec-3c7d"/>
+        <infoLink name="Infiltrate" id="59e3-add5-5972-db43" hidden="false" type="rule" targetId="4be1-8057-5b09-a5cd"/>
+        <infoLink name="Hardened" id="179f-c764-6cff-4c14" hidden="false" type="rule" targetId="76c8-f292-835b-f8ab"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Miner" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="a989-f213-e0e4-7bfb">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">13</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">2d6+1</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Infiltrate, Hardened</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="40"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fa8a-4dc7-2146-b4ed"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="2" field="fa8a-4dc7-2146-b4ed"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Lancer" hidden="false" id="923c-40d5-f038-8d8d" defaultAmount="0" sortIndex="9">
+      <categoryLinks>
+        <categoryLink targetId="2911-f5b2-5e7e-e73e" id="d4fb-57d8-09ab-0cec" primary="true" name="Fidwog"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="GMK4 Lance" id="fa10-4f67-0248-5048" hidden="false" type="profile" targetId="96bc-6474-91bb-96b4"/>
+        <infoLink name="Infiltrate" id="c4ef-ef40-cd1f-0c46" hidden="false" type="rule" targetId="4be1-8057-5b09-a5cd"/>
+        <infoLink name="Hardened" id="8138-ca1d-4e37-0056" hidden="false" type="rule" targetId="76c8-f292-835b-f8ab"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Lancer" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="ff2e-5718-3018-5584">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">13</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">1d6</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="35"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0340-6d51-b186-0779"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="2" field="0340-6d51-b186-0779"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Fydo" hidden="false" id="64ff-b848-8d11-02e7" defaultAmount="0" sortIndex="10">
+      <categoryLinks>
+        <categoryLink targetId="2911-f5b2-5e7e-e73e" id="2945-9119-95ee-107d" primary="true" name="Fidwog"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Teeth and Claws" id="e266-0837-6193-d60a" hidden="false" type="profile" targetId="6ab2-d35e-43b8-e27c"/>
+        <infoLink name="Pack (X)" id="7a59-7662-7401-4c72" hidden="false" type="rule" targetId="84d4-c6cf-89de-c699"/>
+        <infoLink name="Leap (X)" id="f75d-f0a2-8a1b-8978" hidden="false" type="rule" targetId="ad71-6e73-e283-f753"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Fydo" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="0777-0a46-ca6c-3db8">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">14</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">2d6</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">8</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">5</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Leap(2), Pack(3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="18"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="021d-a349-2edc-6036"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="2" field="021d-a349-2edc-6036"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="is-Caerten" hidden="false" id="9799-39d9-f38c-a32f" defaultAmount="0" sortIndex="11">
+      <categoryLinks>
+        <categoryLink targetId="2911-f5b2-5e7e-e73e" id="f5a6-e614-0ffe-6fde" primary="true" name="Fidwog"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Pistol" id="a11e-9086-71a8-4b8e" hidden="false" type="profile" targetId="5b02-0c8a-5dcf-7d4a"/>
+        <infoLink name="Leader (X/Y)" id="81c6-d4a3-acee-4933" hidden="false" type="rule" targetId="0020-c672-c3f4-71fd"/>
+        <infoLink name="Mace" id="bff4-78c8-52eb-2a44" hidden="false" type="profile" targetId="c4c4-ad6e-868a-290d"/>
+      </infoLinks>
+      <profiles>
+        <profile name="is-Caerten" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="4827-e293-5f87-7bf9">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">13</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">2d6</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Leader (2/8)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="32"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c5f-0770-b89c-5aab"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="1" field="9c5f-0770-b89c-5aab"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
