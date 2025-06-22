@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="12c6-2eae-2549-9b9d" name="Crusaders" gameSystemId="sys-e004-1281-bc3b-277e" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="12c6-2eae-2549-9b9d" name="Crusaders" gameSystemId="sys-e004-1281-bc3b-277e" gameSystemRevision="5" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
-    <forceEntry name="Crusaders" id="ab69-88d5-5dee-51dc" hidden="false" childForcesLabel="">
+    <forceEntry name="Crusaders" id="ab69-88d5-5dee-51dc" hidden="false">
       <categoryLinks>
         <categoryLink name="Basic" hidden="false" id="03a0-28c6-ddbe-7e0a" targetId="4154-9742-acd7-509b"/>
         <categoryLink name="Command" hidden="false" id="90ce-0f93-6455-d323" targetId="1108-b2be-1d87-3ae8"/>
@@ -68,6 +68,9 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <infoLinks>
+        <infoLink name="Ryshi" id="ba3d-8f6e-4365-ac04" hidden="false" type="profile" targetId="0867-127a-e906-1c44"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Squad Marksquar" hidden="false" id="8e29-8caa-5282-b557" sortIndex="3">
       <categoryLinks>
@@ -594,12 +597,13 @@
         <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="42"/>
       </costs>
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bb80-70d8-8df7-42fa"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb80-70d8-8df7-42fa"/>
       </constraints>
       <modifierGroups>
         <modifierGroup type="and">
           <conditions>
             <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="2" field="selections" scope="roster" childId="d39f-06cb-047e-d9b2" shared="true"/>
           </conditions>
           <modifiers>
             <modifier type="increment" value="1" field="bb80-70d8-8df7-42fa"/>
@@ -607,10 +611,10 @@
         </modifierGroup>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="increment" value="1" field="bb80-70d8-8df7-42fa"/>
+            <modifier type="set" value="0" field="bb80-70d8-8df7-42fa"/>
           </modifiers>
           <conditions>
-            <condition type="atLeast" value="2" field="selections" scope="roster" childId="ddb9-4576-88bf-8890" shared="true"/>
+            <condition type="lessThan" value="2" field="selections" scope="roster" childId="ddb9-4576-88bf-8890" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -685,7 +689,7 @@
       <infoLinks>
         <infoLink name="Bogen w/Bayonet" id="74c8-ad4a-caca-9857" hidden="false" type="profile" targetId="1e6e-4032-f42b-b1dd"/>
         <infoLink name="Skirmisher" id="867f-47cf-09d4-ba65" hidden="false" type="rule" targetId="3c0c-fdd5-b1a2-43ab"/>
-        <infoLink name="Scout" id="68fa-0b2a-ae44-0f37" hidden="false" type="rule" targetId="52da-21b6-590d-dfce"/>
+        <infoLink name="Scout (X/Y)" id="68fa-0b2a-ae44-0f37" hidden="false" type="rule" targetId="52da-21b6-590d-dfce"/>
       </infoLinks>
       <profiles>
         <profile name="Pathfinder  Yawdryl" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="21c5-5ca5-d2b4-6e6e">
@@ -702,7 +706,7 @@
         <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="50"/>
       </costs>
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5c94-a4a6-2881-7c54"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c94-a4a6-2881-7c54"/>
       </constraints>
       <modifierGroups>
         <modifierGroup type="and">
@@ -715,10 +719,10 @@
         </modifierGroup>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="increment" value="1" field="5c94-a4a6-2881-7c54"/>
+            <modifier type="set" value="0" field="5c94-a4a6-2881-7c54"/>
           </modifiers>
           <conditions>
-            <condition type="atLeast" value="2" field="selections" scope="roster" childId="2d43-fa3e-9335-e7e9" shared="true"/>
+            <condition type="lessThan" value="2" field="selections" scope="roster" childId="2d43-fa3e-9335-e7e9" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -747,12 +751,13 @@
         <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="50"/>
       </costs>
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4928-34cb-6511-3663"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4928-34cb-6511-3663"/>
       </constraints>
       <modifierGroups>
         <modifierGroup type="and">
           <conditions>
             <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="2" field="selections" scope="roster" childId="2d43-fa3e-9335-e7e9" shared="true"/>
           </conditions>
           <modifiers>
             <modifier type="increment" value="1" field="4928-34cb-6511-3663"/>
@@ -760,10 +765,10 @@
         </modifierGroup>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="increment" value="1" field="4928-34cb-6511-3663"/>
+            <modifier type="set" value="0" field="4928-34cb-6511-3663"/>
           </modifiers>
           <conditions>
-            <condition type="atLeast" value="2" field="selections" scope="roster" childId="2d43-fa3e-9335-e7e9" shared="true"/>
+            <condition type="lessThan" value="2" field="selections" scope="roster" childId="2d43-fa3e-9335-e7e9" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>

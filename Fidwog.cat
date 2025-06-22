@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="db84-4fd9-0bef-9d67" name="Fidwog" gameSystemId="sys-e004-1281-bc3b-277e" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="db84-4fd9-0bef-9d67" name="Fidwog" gameSystemId="sys-e004-1281-bc3b-277e" gameSystemRevision="5" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Fidwog" id="cf44-1b12-f1c7-9638" hidden="false">
       <categoryLinks>
-        <categoryLink name="Fidwog" hidden="false" id="6027-a6f6-c720-b646" targetId="2911-f5b2-5e7e-e73e" type="categoryEntry"/>
+        <categoryLink name="Fidwog" hidden="false" id="6027-a6f6-c720-b646" targetId="2911-f5b2-5e7e-e73e"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -11,7 +11,7 @@
     <categoryEntry name="Fidwog" id="2911-f5b2-5e7e-e73e" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
-    <selectionEntry type="model" import="true" name="Gaefyn" hidden="false" id="68f1-18d2-89d8-805e" defaultAmount="0" sortIndex="1">
+    <selectionEntry type="model" import="true" name="Gaefyn" hidden="false" id="68f1-18d2-89d8-805e" defaultAmount="3" sortIndex="1">
       <categoryLinks>
         <categoryLink targetId="2911-f5b2-5e7e-e73e" id="909f-6214-7edf-d4eb" primary="true" name="Fidwog"/>
       </categoryLinks>
@@ -106,7 +106,7 @@
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="han-Gaefyn" hidden="false" id="5dbc-e9a6-a7e4-0b49" defaultAmount="0" sortIndex="2">
+    <selectionEntry type="model" import="true" name="han-Gaefyn" hidden="false" id="5dbc-e9a6-a7e4-0b49" defaultAmount="1" sortIndex="2">
       <categoryLinks>
         <categoryLink targetId="2911-f5b2-5e7e-e73e" id="00e7-c91f-a269-2662" primary="true" name="Fidwog"/>
       </categoryLinks>
@@ -177,7 +177,7 @@
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Crown Milwer" hidden="false" id="d252-8219-e2bb-7329" defaultAmount="0" sortIndex="4">
+    <selectionEntry type="model" import="true" name="Crown Milwer" hidden="false" id="d252-8219-e2bb-7329" defaultAmount="1" sortIndex="4">
       <categoryLinks>
         <categoryLink targetId="2911-f5b2-5e7e-e73e" id="af47-8d71-cc3c-596d" primary="true" name="Fidwog"/>
       </categoryLinks>
@@ -214,7 +214,7 @@
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Yawdryl" hidden="false" id="b95d-3819-b276-b8d3" defaultAmount="0" sortIndex="4">
+    <selectionEntry type="model" import="true" name="Yawdryl" hidden="false" id="b95d-3819-b276-b8d3" defaultAmount="1" sortIndex="4">
       <categoryLinks>
         <categoryLink targetId="2911-f5b2-5e7e-e73e" id="643f-fe83-075a-03b4" primary="true" name="Fidwog"/>
       </categoryLinks>

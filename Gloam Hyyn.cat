@@ -4,10 +4,366 @@
     <categoryEntry name="Gloam Hyyn" id="56ec-609a-6f85-773c" hidden="false"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry name="Gloam Hyyn" id="d504-09b2-b2fa-0b4c" hidden="false" childForcesLabel="">
+    <forceEntry name="Gloam Hyyn" id="d504-09b2-b2fa-0b4c" hidden="false">
       <categoryLinks>
-        <categoryLink name="Gloam Hyyn" hidden="false" id="74c4-ac7b-975b-1c45" targetId="56ec-609a-6f85-773c" type="categoryEntry"/>
+        <categoryLink name="Gloam Hyyn" hidden="false" id="74c4-ac7b-975b-1c45" targetId="56ec-609a-6f85-773c"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Rhyfler" hidden="false" id="5fa6-3d96-da93-7dd6" defaultAmount="3" sortIndex="1">
+      <categoryLinks>
+        <categoryLink targetId="56ec-609a-6f85-773c" id="f29c-2f52-fc69-ce04" primary="true" name="Gloam Hyyn"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Harlech Carbine" id="2aaa-de2a-39ed-0d7f" hidden="false" type="profile" targetId="f00a-3575-b17a-2a62"/>
+        <infoLink name="Support" id="7393-8984-8805-6a82" hidden="false" type="rule" targetId="4193-ea01-854d-cd42"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Rhyfler" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="93c8-4dd7-2cff-ec80">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">12</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">2d6-1</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Support</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="23"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Milwer" hidden="false" id="8fc4-2f54-a2fc-da41" defaultAmount="1" sortIndex="4">
+      <categoryLinks>
+        <categoryLink targetId="56ec-609a-6f85-773c" id="2e04-62cb-2847-17f5" primary="true" name="Gloam Hyyn"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Cryfen" id="e9ff-1d7f-d25d-0bf8" hidden="false" type="profile" targetId="96cc-620e-6739-5a89"/>
+        <infoLink name="Leader (X/Y)" id="17eb-f4b7-f057-ab0e" hidden="false" type="rule" targetId="0020-c672-c3f4-71fd"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Milwer" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="010d-2e32-ce59-7c15">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">12</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Leader (2/3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="34"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3735-6334-f743-1adc"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="1" field="3735-6334-f743-1adc"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Yawdryl" hidden="false" id="d9f3-c485-4da4-a577" defaultAmount="1" sortIndex="5">
+      <categoryLinks>
+        <categoryLink targetId="56ec-609a-6f85-773c" id="0743-c875-6943-1e4b" primary="true" name="Gloam Hyyn"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Doru" id="bddf-a3af-9fda-e792" hidden="false" type="profile" targetId="083b-c66f-f2a4-a21f"/>
+        <infoLink name="Leader (X/Y)" id="49db-0afa-0299-0aa7" hidden="false" type="rule" targetId="0020-c672-c3f4-71fd"/>
+        <infoLink name="The Gloam has Eyes" id="ee8c-3040-af0b-8238" hidden="false" type="rule" targetId="8b6c-a294-5e5a-7726"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Yawdryl" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="1bda-3b32-e962-a497">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">12</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Leader (3/5), The Gloam has Eyes</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="38"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1eb5-9983-5f85-b205"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="1" field="1eb5-9983-5f85-b205"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="is-Caerten" hidden="false" id="1145-6815-5329-e5b7" defaultAmount="0" sortIndex="6">
+      <categoryLinks>
+        <categoryLink targetId="56ec-609a-6f85-773c" id="051a-6530-e205-b88c" primary="true" name="Gloam Hyyn"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Pistol" id="2354-0104-6002-6896" hidden="false" type="profile" targetId="5b02-0c8a-5dcf-7d4a"/>
+        <infoLink name="Leader (X/Y)" id="68bc-f760-1c73-393f" hidden="false" type="rule" targetId="0020-c672-c3f4-71fd"/>
+        <infoLink name="Sword" id="4a70-b6ed-10ac-e427" hidden="false" type="profile" targetId="fc4c-ffbc-b544-79ea"/>
+      </infoLinks>
+      <profiles>
+        <profile name="is-Caerten" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="3a85-16d7-3d59-8794">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">12</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">2d6</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Leader (3/4)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="30"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8fb-aa24-a56e-4bf9"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="1" field="1eb5-9983-5f85-b205"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Standard Bearer" hidden="false" id="919d-255b-b6d4-33c3" defaultAmount="0" sortIndex="7">
+      <categoryLinks>
+        <categoryLink targetId="56ec-609a-6f85-773c" id="d30a-bb13-c89a-7a19" primary="true" name="Gloam Hyyn"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Doru" id="9374-3f8a-7bde-c195" hidden="false" type="profile" targetId="083b-c66f-f2a4-a21f"/>
+        <infoLink name="Standard" id="6d28-2b84-6df7-4a69" hidden="false" type="rule" targetId="34a4-34b4-0c15-a373"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Standard Bearer" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="4ab9-bbf4-8049-14c6">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">12</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Standard</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="35"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="34a5-df1e-8559-a763"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="1" field="34a5-df1e-8559-a763"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Squirrel Handler" hidden="false" id="3da5-fbeb-9df0-dbce" defaultAmount="0" sortIndex="8">
+      <categoryLinks>
+        <categoryLink targetId="56ec-609a-6f85-773c" id="6509-188f-83ff-606e" primary="true" name="Gloam Hyyn"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Harlech Carbine" id="d0f9-da13-4fb0-9237" hidden="false" type="profile" targetId="f00a-3575-b17a-2a62"/>
+        <infoLink name="PykPyk (X)" id="f497-d39c-8b20-2c95" hidden="false" type="rule" targetId="806b-7565-3ad6-e2ee"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Squirrel Handler" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="d995-a4ba-f0cf-0428">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">12</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">1d6+1</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">PykPyk(3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="30"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4665-25fb-b18d-3e35"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="1" field="4665-25fb-b18d-3e35"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Sarf-cyn Handler" hidden="false" id="237e-2aa8-f97f-0ed9" defaultAmount="1" sortIndex="9">
+      <categoryLinks>
+        <categoryLink targetId="56ec-609a-6f85-773c" id="a469-6d2c-2f69-cdb9" primary="true" name="Gloam Hyyn"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Harlech Carbine" id="06bb-2d71-6a5f-dfbe" hidden="false" type="profile" targetId="f00a-3575-b17a-2a62"/>
+        <infoLink name="Critter Wrangler" id="ab45-8290-3559-be28" hidden="false" type="rule" targetId="c777-4104-3ddc-35c2"/>
+        <infoLink name="Goad" id="d4ba-3610-82d8-0a16" hidden="false" type="profile" targetId="a857-c2c8-b936-3a47"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Sarf-cyn Handler" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="1526-f52f-050a-a42b">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">12</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">2d6</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Critter Wrangler</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="32"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6460-8db4-59a3-8e01"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="1" field="6460-8db4-59a3-8e01"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Sarf-cyn" hidden="false" id="213a-9561-ae89-b8f5" defaultAmount="2" sortIndex="10">
+      <categoryLinks>
+        <categoryLink targetId="56ec-609a-6f85-773c" id="745c-bef4-3a9e-979b" primary="true" name="Gloam Hyyn"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Teeth and Claws" id="18ef-ed9a-10dd-42f2" hidden="false" type="profile" targetId="6ab2-d35e-43b8-e27c"/>
+        <infoLink name="Wild" id="fb44-33fa-a851-0f34" hidden="false" type="rule" targetId="0d49-e210-2f9e-2905"/>
+        <infoLink name="Creature" id="61bd-6c0c-229e-6382" hidden="false" type="rule" targetId="f4d8-c946-8bbe-6771"/>
+        <infoLink name="Taste for Squirrel" id="d906-257c-8469-daa8" hidden="false" type="rule" targetId="c173-e7fc-f746-1609"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Sarf-cyn" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="8eca-640a-0a5c-df72">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">13</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">2d6</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">6</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Wild, Creature,
+Taste for Squirrel </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="18"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="98f3-b619-767d-b442"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="2" field="98f3-b619-767d-b442"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Trapper" hidden="false" id="caf9-107c-fb31-64e8" defaultAmount="1" sortIndex="2">
+      <categoryLinks>
+        <categoryLink targetId="56ec-609a-6f85-773c" id="70e3-4f4a-9aef-44b3" primary="true" name="Gloam Hyyn"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Harlech Carbine" id="a850-2c03-5001-c00a" hidden="false" type="profile" targetId="f00a-3575-b17a-2a62"/>
+        <infoLink name="Skirmisher" id="e3a0-f02e-d282-d1e8" hidden="false" type="rule" targetId="3c0c-fdd5-b1a2-43ab"/>
+        <infoLink name="Trapper" id="976e-cf9d-4214-5f8e" hidden="false" type="rule" targetId="7dff-9112-0e95-36ad"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Trapper" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="3bf7-27c4-e9b5-297d">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">13</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">2d6-1</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Skirmisher, Trapper</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="35"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f186-989b-5db7-f281"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="1" field="f186-989b-5db7-f281"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Marksquar" hidden="false" id="0209-e821-ab11-9738" defaultAmount="1" sortIndex="3">
+      <categoryLinks>
+        <categoryLink targetId="56ec-609a-6f85-773c" id="651e-4f60-54ff-c5e8" primary="true" name="Gloam Hyyn"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Harlech Carbine" id="1565-3406-c8c3-8041" hidden="false" type="profile" targetId="f00a-3575-b17a-2a62"/>
+        <infoLink name="Dead-eye" id="7022-152d-235d-1d95" hidden="false" type="rule" targetId="2294-73f5-f12e-70f3"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Marksquar" typeId="28d1-962e-93cd-f4f8" typeName="Profile" hidden="false" id="4aab-4573-fdff-89ab">
+          <characteristics>
+            <characteristic name="Sk" typeId="8d7f-bb53-0b28-ea25">12</characteristic>
+            <characteristic name="Mt" typeId="97cf-2632-a2a8-2931">1d6+1</characteristic>
+            <characteristic name="MA" typeId="4620-09a9-a250-f3d7">5</characteristic>
+            <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
+            <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Dead-eye</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="28"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="553e-1e4a-a6c1-e6f6"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="300" field="30c9-0a6f-d43c-0271" scope="roster" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="2" field="553e-1e4a-a6c1-e6f6"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>
