@@ -1,2 +1,2 @@
-# nr-quars-war
-New Recruit Catalog for This Quar's War
+# nr-quar
+New Recruit Catalog for QUAR: Clash of Rhyfles
