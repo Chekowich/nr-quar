@@ -17,6 +17,42 @@
         <characteristicType name="Abilities" id="f493-5402-823b-4a3b"/>
       </characteristicTypes>
     </profileType>
+    <profileType name="Tractor" id="ea3c-db9f-efca-08c6" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Crew" id="9746-8b0c-4b5c-f7c6"/>
+        <characteristicType name="Sk" id="9643-2c58-f2b5-f094"/>
+        <characteristicType name="MA" id="b025-c0ec-34fe-b9b8"/>
+        <characteristicType name="Abilities" id="ab94-4da1-0332-cdf2"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Main Gun" id="e584-41ec-a24e-d94e" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Rn" id="a76d-6ed3-c747-7f2e"/>
+        <characteristicType name="Arc" id="4187-000b-b478-eae1"/>
+        <characteristicType name="Abilities" id="a15c-53a1-98c9-b0a6"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Location (Damage Points)" id="690f-2134-1f14-ad10" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Thread" id="3f1f-af3e-776d-94e1"/>
+        <characteristicType name="Hull" id="1043-1e97-fc02-e72c"/>
+        <characteristicType name="Engine" id="c217-e1db-75f6-df2b"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Armor" id="393b-71fd-81f8-eed6" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Tread" id="8587-e71c-d3cf-43d1"/>
+        <characteristicType name="Hull" id="26a4-5f7d-bc0b-7a9c"/>
+        <characteristicType name="Engine" id="d1ae-1dfe-97e1-32f2"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Defensive Weapon" id="e233-beee-9f1a-8f7b" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="R" id="ee84-ea3a-87db-f012"/>
+        <characteristicType name="Sn" id="6f20-4c73-cae6-9e5d"/>
+        <characteristicType name="Abilities" id="757f-ecd3-6006-0dfc"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <costTypes>
     <costType name="pts" id="30c9-0a6f-d43c-0271" defaultCostLimit="-1"/>
@@ -428,9 +464,7 @@ OOA, the Sarf-cyn regain their Wild status.</description>
       <description>While certainly not a picky eater, the Sarf-cyn is known to go out of its way for its
 favorite snack. When a commander uses a Pykpyk, roll 1d6 for each unit with this
 ability on the field. On a 5-6, the PykPyk is eaten while trying to complete its task and
-is spent for no effect.
-
-</description>
+is spent for no effect.</description>
     </rule>
     <rule name="Wild" id="0d49-e210-2f9e-2905" hidden="false">
       <description>Ruled by instinct, some creatures are hard to control; best to let them loose and hope
@@ -440,6 +474,33 @@ perform one of the following Tasks:
 •Standard Movement towards the nearest rhyfler, friendly or enemy.
 •Melee attack against a model they are engaged with (friendly or enemy).
 •Recover if Gobsmacked.</description>
+    </rule>
+    <rule name="Closed Hull" id="9ea5-948a-fc21-9de8" hidden="false">
+      <description>This tractor does not have a top hatch or other easy access. It is always considered Buttoned Up, so the Crew
+Commander is limited by that status for Spotting and Defending against assaults.</description>
+    </rule>
+    <rule name="Squad Tractor" id="1686-0a08-2d32-240e" hidden="false">
+      <description>Smaller than their cousins, the one-quar Squad Tractors are attached to an infantry squad to provide both fire
+support and moving cover. They follow the Squad Tractor Activation rules listed above.</description>
+    </rule>
+    <rule name="Turret" id="31d3-d762-21af-d0b6" hidden="false">
+      <description>The tractor has a turret which allows the Hull, or its weapon platform, to rotate towards a target. This requires the
+Gunner to perform the Turn Turret Task.</description>
+    </rule>
+    <rule name="Turretless" id="c53a-7999-7032-0aa8" hidden="false">
+      <description>The vehicle has no turret. Once during the Round the Gunner may pass his Activation to have the Driver immediately
+perform a Turn Vehicle Task.</description>
+    </rule>
+    <rule name="Slow Reload (tractor)" id="58c9-7f38-2641-242d" hidden="false">
+      <description>These complex weapons require the spending of an action to reload after a ranged attack. If the Gunner chooses
+not to, or cannot immediately reload the Main Gun the tractor must be marked as having an unloaded weapon</description>
+    </rule>
+    <rule name="Anti-Tractor (X)" id="b0b8-a3de-ead5-098c" hidden="false">
+      <alias>Anti-Tractor</alias>
+      <description>Anti-Tractor (X)
+The munitions carried by some tractors are designed to take their opposing brethren off
+the battlefield as quickly as possible. Weapons with this ability lower the target’s armor
+value by X when determining the result of a Might roll.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -657,9 +718,78 @@ Gun Shield, Heavy(2/4)</characteristic>
         <characteristic name="Abilities" typeId="f493-5402-823b-4a3b"/>
       </characteristics>
     </profile>
+    <profile name="83mm Smoothbore Canon" typeId="e584-41ec-a24e-d94e" typeName="Main Gun" hidden="false" id="50e9-3627-5831-a37e">
+      <characteristics>
+        <characteristic name="Rn" typeId="a76d-6ed3-c747-7f2e">N/A</characteristic>
+        <characteristic name="Arc" typeId="4187-000b-b478-eae1">90° </characteristic>
+        <characteristic name="Abilities" typeId="a15c-53a1-98c9-b0a6">Slow Reload, Blast(2, 2d6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Krynger 78mm Gun " typeId="e584-41ec-a24e-d94e" typeName="Main Gun" hidden="false" id="90a5-1eec-5533-e7ee">
+      <characteristics>
+        <characteristic name="Rn" typeId="a76d-6ed3-c747-7f2e">N/A</characteristic>
+        <characteristic name="Arc" typeId="4187-000b-b478-eae1">90° </characteristic>
+        <characteristic name="Abilities" typeId="a15c-53a1-98c9-b0a6">Slow Reload, Blast(2, 2d6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="M8-c MMG" typeId="e584-41ec-a24e-d94e" typeName="Main Gun" hidden="false" id="c29b-6300-59da-4b52">
+      <characteristics>
+        <characteristic name="Rn" typeId="a76d-6ed3-c747-7f2e">8</characteristic>
+        <characteristic name="Arc" typeId="4187-000b-b478-eae1">180° </characteristic>
+        <characteristic name="Abilities" typeId="a15c-53a1-98c9-b0a6">Automatic</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="82mm Lynis Tube Mk2" typeId="e584-41ec-a24e-d94e" typeName="Main Gun" hidden="false" id="8dcf-c3a1-cfaf-9bad">
+      <characteristics>
+        <characteristic name="Rn" typeId="a76d-6ed3-c747-7f2e">N/A</characteristic>
+        <characteristic name="Arc" typeId="4187-000b-b478-eae1">90° </characteristic>
+        <characteristic name="Abilities" typeId="a15c-53a1-98c9-b0a6">Slow Reload, Blast(2, 2d6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="72mm TLZ-RT" typeId="e584-41ec-a24e-d94e" typeName="Main Gun" hidden="false" id="60e6-a56d-5139-837d">
+      <characteristics>
+        <characteristic name="Rn" typeId="a76d-6ed3-c747-7f2e">N/A</characteristic>
+        <characteristic name="Arc" typeId="4187-000b-b478-eae1">90° </characteristic>
+        <characteristic name="Abilities" typeId="a15c-53a1-98c9-b0a6">Slow Reload, Blast(2, 2d6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="84mm Smoothbore" typeId="e584-41ec-a24e-d94e" typeName="Main Gun" hidden="false" id="9eb4-abcb-c191-1914">
+      <characteristics>
+        <characteristic name="Rn" typeId="a76d-6ed3-c747-7f2e">8</characteristic>
+        <characteristic name="Arc" typeId="4187-000b-b478-eae1">90° </characteristic>
+        <characteristic name="Abilities" typeId="a15c-53a1-98c9-b0a6">Slow Reload,
+Blast(2, 2d6-1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="182mm Y1(t)(a) Crynstof" typeId="e584-41ec-a24e-d94e" typeName="Main Gun" hidden="false" id="e9f4-23f1-8dfc-cd60">
+      <characteristics>
+        <characteristic name="Rn" typeId="a76d-6ed3-c747-7f2e">Min 4</characteristic>
+        <characteristic name="Arc" typeId="4187-000b-b478-eae1">90° </characteristic>
+        <characteristic name="Abilities" typeId="a15c-53a1-98c9-b0a6">Blast(3, 3d6),
+Slow Reload,
+Minimum Range</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Shotgun" typeId="e233-beee-9f1a-8f7b" typeName="Defensive Weapon" hidden="false" id="06b8-9d5c-afb6-8a56">
+      <characteristics>
+        <characteristic name="R" typeId="ee84-ea3a-87db-f012">6</characteristic>
+        <characteristic name="Sn" typeId="6f20-4c73-cae6-9e5d">-2</characteristic>
+        <characteristic name="Abilities" typeId="757f-ecd3-6006-0dfc">Scattergun</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="44mm Rifled Gun" typeId="e584-41ec-a24e-d94e" typeName="Main Gun" hidden="false" id="a3e5-6d96-b652-7ed8">
+      <characteristics>
+        <characteristic name="Rn" typeId="a76d-6ed3-c747-7f2e">8”</characteristic>
+        <characteristic name="Arc" typeId="4187-000b-b478-eae1">45° </characteristic>
+        <characteristic name="Abilities" typeId="a15c-53a1-98c9-b0a6">Slow Reload,
+Blast(1, 2d6-1),
+Anti-Tractor(1)</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <publications>
     <publication name="Addendum0525" id="4c47-2969-b61a-43a9" hidden="false" shortName="Rules Addendum!" publisherUrl="https://rhyfler.com/rulebooks/"/>
     <publication name="A Rhyfler’s Pocket-Book" id="2e88-92ef-c2c6-9c78" hidden="false" publisherUrl="https://rhyfler.com/rulebooks/" shortName="The Rules!"/>
+    <publication name="Tractors in A RHyfler’s Pocket-Book Playtest Document v2" id="835a-692e-cf61-39a1" hidden="false" shortName="TractorPlaytest1224" publisherUrl="https://rhyfler.com/rulebooks/"/>
   </publications>
 </gameSystem>

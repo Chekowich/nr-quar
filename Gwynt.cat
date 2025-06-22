@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9149-f5e5-3310-7a92" name="Gwynt" gameSystemId="sys-e004-1281-bc3b-277e" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9149-f5e5-3310-7a92" name="Gwynt" gameSystemId="sys-e004-1281-bc3b-277e" gameSystemRevision="5" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Gwynt" id="c5d6-d5bd-22f2-9c44" hidden="false">
       <categoryLinks>
-        <categoryLink name="Gwynt" hidden="false" id="0478-e864-eef8-736a" targetId="497f-cc5f-110f-40e8" type="categoryEntry"/>
+        <categoryLink name="Gwynt" hidden="false" id="0478-e864-eef8-736a" targetId="497f-cc5f-110f-40e8"/>
+        <categoryLink name="Tractor" hidden="false" id="82a4-5546-cb5c-24db" targetId="5494-a91a-836a-53f2" type="categoryEntry"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
   <categoryEntries>
     <categoryEntry name="Gwynt" id="497f-cc5f-110f-40e8" hidden="false"/>
+    <categoryEntry name="Tractor" id="5494-a91a-836a-53f2" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Rhyfler" hidden="false" id="fbfd-0773-e5c4-1c47" defaultAmount="6" sortIndex="1">
@@ -322,6 +324,56 @@ Fire</characteristic>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Aerfen" hidden="false" id="16b1-3de5-6c9b-c1ec">
+      <categoryLinks>
+        <categoryLink targetId="5494-a91a-836a-53f2" id="6c68-b106-1715-a259" primary="true" name="Tractor"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="160"/>
+      </costs>
+      <profiles>
+        <profile name="Aerfen" typeId="ea3c-db9f-efca-08c6" typeName="Tractor" hidden="false" id="57b6-a719-b4fc-9d1d">
+          <characteristics>
+            <characteristic name="Crew" typeId="9746-8b0c-4b5c-f7c6">3</characteristic>
+            <characteristic name="Sk" typeId="9643-2c58-f2b5-f094">12</characteristic>
+            <characteristic name="MA" typeId="b025-c0ec-34fe-b9b8">4</characteristic>
+            <characteristic name="Abilities" typeId="ab94-4da1-0332-cdf2">Turretless</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Aerfen" typeId="690f-2134-1f14-ad10" typeName="Location (Damage Points)" hidden="false" id="e674-f67c-9479-df4e" noindex="false">
+          <characteristics>
+            <characteristic name="Thread" typeId="3f1f-af3e-776d-94e1">3</characteristic>
+            <characteristic name="Hull" typeId="1043-1e97-fc02-e72c">2</characteristic>
+            <characteristic name="Engine" typeId="c217-e1db-75f6-df2b">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Front" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="187b-304b-7a40-5c58">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-2(AV6)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">3-6(AV7)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2"/>
+          </characteristics>
+        </profile>
+        <profile name="Side" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="17bb-e1c4-b43c-64bb">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-2(AV6)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">3-5(AV7)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2">6(AV5)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rear" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="d1f2-fae8-bf30-c0a7">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-2(AV6)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">3-4(AV7)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2">5-6(AV5)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="82mm Lynis Tube Mk2" id="d552-641f-0017-deb1" hidden="false" type="profile" targetId="8dcf-c3a1-cfaf-9bad"/>
+        <infoLink name="Turretless" id="06ea-e5a1-cbf1-02cb" hidden="false" type="rule" targetId="c53a-7999-7032-0aa8"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
 </catalogue>

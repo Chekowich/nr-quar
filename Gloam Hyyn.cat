@@ -2,11 +2,13 @@
 <catalogue library="false" id="104d-37c6-5b94-65b2" name="Gloam Hyyn" gameSystemId="sys-e004-1281-bc3b-277e" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Gloam Hyyn" id="56ec-609a-6f85-773c" hidden="false"/>
+    <categoryEntry name="Tractor" id="d00d-d28e-f34a-3560" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Gloam Hyyn" id="d504-09b2-b2fa-0b4c" hidden="false">
       <categoryLinks>
         <categoryLink name="Gloam Hyyn" hidden="false" id="74c4-ac7b-975b-1c45" targetId="56ec-609a-6f85-773c"/>
+        <categoryLink name="Tractor" hidden="false" id="0ca3-4d3d-1bc4-53fd" targetId="d00d-d28e-f34a-3560" type="categoryEntry"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -271,7 +273,7 @@
             <characteristic name="MA" typeId="4620-09a9-a250-f3d7">6</characteristic>
             <characteristic name="Toughness" typeId="5f6c-fe93-0ab2-6b90">4</characteristic>
             <characteristic name="Special Ability" typeId="30ed-0875-d71c-fdb9">Wild, Creature,
-Taste for Squirrel </characteristic>
+Taste for Squirrel</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -364,6 +366,57 @@ Taste for Squirrel </characteristic>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Squeedle" hidden="false" id="71a9-f01f-02d0-9f18">
+      <categoryLinks>
+        <categoryLink targetId="d00d-d28e-f34a-3560" id="f745-3196-6b4d-a806" primary="true" name="Tractor"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="95"/>
+      </costs>
+      <profiles>
+        <profile name="Squeedle" typeId="ea3c-db9f-efca-08c6" typeName="Tractor" hidden="false" id="a673-915a-a58e-4d4e">
+          <characteristics>
+            <characteristic name="Crew" typeId="9746-8b0c-4b5c-f7c6">2</characteristic>
+            <characteristic name="Sk" typeId="9643-2c58-f2b5-f094">12</characteristic>
+            <characteristic name="MA" typeId="b025-c0ec-34fe-b9b8">6</characteristic>
+            <characteristic name="Abilities" typeId="ab94-4da1-0332-cdf2">Squad Tractor, Turretless</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Squeedle" typeId="690f-2134-1f14-ad10" typeName="Location (Damage Points)" hidden="false" id="c6e3-2d3a-f1bd-4832" noindex="false">
+          <characteristics>
+            <characteristic name="Thread" typeId="3f1f-af3e-776d-94e1">3</characteristic>
+            <characteristic name="Hull" typeId="1043-1e97-fc02-e72c">2</characteristic>
+            <characteristic name="Engine" typeId="c217-e1db-75f6-df2b">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Front" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="8b94-97fb-4243-1b02">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-2(AV6)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">3-6(AV7)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2"/>
+          </characteristics>
+        </profile>
+        <profile name="Side" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="24f3-fda3-a58d-2173">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-3(AV6)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">4-5(AV7)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2">6(AV5)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rear" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="8c18-03f0-a328-f58f">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-2(AV6)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">3-4(AV7)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2">5-6(AV5)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="44mm Rifled Gun" id="688e-12a2-8467-f8c4" hidden="false" type="profile" targetId="a3e5-6d96-b652-7ed8"/>
+        <infoLink name="Turretless" id="f06c-4421-44a8-3796" hidden="false" type="rule" targetId="c53a-7999-7032-0aa8"/>
+        <infoLink name="Squad Tractor" id="ea8e-a42c-3e5b-4104" hidden="false" type="rule" targetId="1686-0a08-2d32-240e"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
 </catalogue>

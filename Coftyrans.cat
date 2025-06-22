@@ -6,6 +6,7 @@
         <categoryLink name="Basic" hidden="false" id="f7a6-b1e1-0d12-e505" targetId="a046-09d8-98b5-102f"/>
         <categoryLink name="Command" hidden="false" id="0fae-aea2-6b45-8c5e" targetId="ba6f-dc17-ff3e-7fe6"/>
         <categoryLink name="Specialist" hidden="false" id="a167-7e1d-6120-7383" targetId="f1d2-6ff0-b496-3900"/>
+        <categoryLink name="New Category" hidden="false" id="caf7-0c77-3b7a-5436" targetId="7481-4b7f-d519-b97d"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -59,6 +60,7 @@
       </modifierGroups>
     </categoryEntry>
     <categoryEntry name="Sharpshooter" id="e131-cfdc-48a9-7b2b" hidden="false"/>
+    <categoryEntry name="Tractor" id="7481-4b7f-d519-b97d" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Rhyfler (Harlech)" hidden="false" id="57cb-624e-f84a-a63f" defaultAmount="7" sortIndex="1">
@@ -529,7 +531,7 @@
     <selectionEntry type="model" import="true" name="Trench Raider" hidden="false" id="b043-136d-bc61-a690" defaultAmount="0" sortIndex="14">
       <categoryLinks>
         <categoryLink targetId="f1d2-6ff0-b496-3900" id="c264-861c-1b68-9c02" primary="true" name="Specialist"/>
-        <categoryLink targetId="e131-cfdc-48a9-7b2b" id="6af2-e785-825a-77b7" primary="false" name="New Category"/>
+        <categoryLink targetId="e131-cfdc-48a9-7b2b" id="6af2-e785-825a-77b7" primary="false" name="Sharpshooter"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Doru" id="43a5-2295-aa56-c4d2" hidden="false" type="profile" targetId="083b-c66f-f2a4-a21f"/>
@@ -804,6 +806,56 @@ Leader(3/4)</characteristic>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Chyweethl" hidden="false" id="2e48-e412-2337-d4c0" sortIndex="22">
+      <categoryLinks>
+        <categoryLink targetId="7481-4b7f-d519-b97d" id="b98a-5e41-09fd-a0dc" primary="true" name="New Category"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="155"/>
+      </costs>
+      <profiles>
+        <profile name="Chyweethl" typeId="ea3c-db9f-efca-08c6" typeName="Tractor" hidden="false" id="29a0-2493-f2b6-a64f">
+          <characteristics>
+            <characteristic name="Crew" typeId="9746-8b0c-4b5c-f7c6">3</characteristic>
+            <characteristic name="Sk" typeId="9643-2c58-f2b5-f094">12</characteristic>
+            <characteristic name="MA" typeId="b025-c0ec-34fe-b9b8">4</characteristic>
+            <characteristic name="Abilities" typeId="ab94-4da1-0332-cdf2">Turretless</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Chyweethl" typeId="690f-2134-1f14-ad10" typeName="Location (Damage Points)" hidden="false" id="f997-1633-940f-ccec" noindex="false">
+          <characteristics>
+            <characteristic name="Thread" typeId="3f1f-af3e-776d-94e1">4</characteristic>
+            <characteristic name="Hull" typeId="1043-1e97-fc02-e72c">3</characteristic>
+            <characteristic name="Engine" typeId="c217-e1db-75f6-df2b">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Front" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="1358-5bc0-be17-297e">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-4(AV7)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">5-6(AV5)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2"/>
+          </characteristics>
+        </profile>
+        <profile name="Side" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="3354-f122-c6fc-653e">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-5(AV7)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">6(AV5)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2"/>
+          </characteristics>
+        </profile>
+        <profile name="Rear" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="d3ec-c853-b505-8986">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-4(AV7)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c"/>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2">5-6(AV5)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="83mm Smoothbore Canon" id="3c0e-c123-0fa0-3a24" hidden="false" type="profile" targetId="50e9-3627-5831-a37e"/>
+        <infoLink name="Turretless" id="d4cf-3d31-4938-3514" hidden="false" type="rule" targetId="c53a-7999-7032-0aa8"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
 </catalogue>

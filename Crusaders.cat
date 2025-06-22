@@ -6,11 +6,13 @@
         <categoryLink name="Basic" hidden="false" id="03a0-28c6-ddbe-7e0a" targetId="4154-9742-acd7-509b"/>
         <categoryLink name="Command" hidden="false" id="90ce-0f93-6455-d323" targetId="1108-b2be-1d87-3ae8"/>
         <categoryLink name="Specialist" hidden="false" id="3a9c-f65b-428f-1f69" targetId="c834-764f-ece2-b03e"/>
+        <categoryLink name="Tractor" hidden="false" id="1455-46e8-02da-2180" targetId="32c4-a257-220a-291e" type="categoryEntry"/>
       </categoryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="fc0d-3154-ce64-8b34-min" includeChildSelections="true"/>
-        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="fc0d-3154-ce64-8b34-max" includeChildSelections="true"/>
-      </constraints>
+    </forceEntry>
+    <forceEntry name="Big Game Hunt" id="d825-b0f5-9c39-435d" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Big Game Hunt" hidden="false" id="a9d6-1b14-a429-e916" targetId="81f1-19dd-f6a1-99e9" type="categoryEntry"/>
+      </categoryLinks>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
@@ -773,6 +775,108 @@
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Ailthean" hidden="false" id="67fb-f6b0-1591-3068" sortIndex="24">
+      <categoryLinks>
+        <categoryLink targetId="32c4-a257-220a-291e" id="b12c-12db-024f-ad57" primary="true" name="Tractor"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="185"/>
+      </costs>
+      <profiles>
+        <profile name="Ailthean" typeId="ea3c-db9f-efca-08c6" typeName="Tractor" hidden="false" id="00f6-62b7-8056-e50b">
+          <characteristics>
+            <characteristic name="Crew" typeId="9746-8b0c-4b5c-f7c6">3</characteristic>
+            <characteristic name="Sk" typeId="9643-2c58-f2b5-f094">12</characteristic>
+            <characteristic name="MA" typeId="b025-c0ec-34fe-b9b8">4</characteristic>
+            <characteristic name="Abilities" typeId="ab94-4da1-0332-cdf2">Turret</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ailthean" typeId="690f-2134-1f14-ad10" typeName="Location (Damage Points)" hidden="false" id="b48d-5d95-f0ef-97e7" noindex="false">
+          <characteristics>
+            <characteristic name="Thread" typeId="3f1f-af3e-776d-94e1">3</characteristic>
+            <characteristic name="Hull" typeId="1043-1e97-fc02-e72c">3</characteristic>
+            <characteristic name="Engine" typeId="c217-e1db-75f6-df2b">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Front" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="9236-762a-dccd-7626">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-2(AV8)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">3-6(AV7)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2"/>
+          </characteristics>
+        </profile>
+        <profile name="Side" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="2031-51bf-880a-ea8e">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-2(AV8)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">3-4(AV7)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2">5-6(AV6)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rear" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="3d6c-12b1-52f6-acea">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-2(AV8)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">3(AV7)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2">4-6(AV6)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Krynger 78mm Gun " id="c515-cfa4-4091-0a0d" hidden="false" type="profile" targetId="90a5-1eec-5533-e7ee"/>
+        <infoLink name="Turret" id="7a99-de17-4bee-3b48" hidden="false" type="rule" targetId="31d3-d762-21af-d0b6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Baeliog" hidden="false" id="1d09-47bb-fbaa-5611" sortIndex="25">
+      <categoryLinks>
+        <categoryLink targetId="32c4-a257-220a-291e" id="e396-893e-6c80-e1ab" primary="false" name="Tractor"/>
+        <categoryLink targetId="81f1-19dd-f6a1-99e9" id="c24a-dcbc-96b1-495f" primary="true" name="Big Game Hunt"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Baeliog" typeId="ea3c-db9f-efca-08c6" typeName="Tractor" hidden="false" id="d3e0-465b-37e5-8dc5">
+          <characteristics>
+            <characteristic name="Crew" typeId="9746-8b0c-4b5c-f7c6">3+</characteristic>
+            <characteristic name="Sk" typeId="9643-2c58-f2b5-f094">12</characteristic>
+            <characteristic name="MA" typeId="b025-c0ec-34fe-b9b8">3</characteristic>
+            <characteristic name="Abilities" typeId="ab94-4da1-0332-cdf2">Turret</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Baeliog" typeId="690f-2134-1f14-ad10" typeName="Location (Damage Points)" hidden="false" id="b8cf-0e48-8615-ca83" noindex="false">
+          <characteristics>
+            <characteristic name="Thread" typeId="3f1f-af3e-776d-94e1">4</characteristic>
+            <characteristic name="Hull" typeId="1043-1e97-fc02-e72c">4</characteristic>
+            <characteristic name="Engine" typeId="c217-e1db-75f6-df2b">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Front" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="5fa8-f31e-a562-6d16">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-2(AV8)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">3-6(AV9)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2"/>
+          </characteristics>
+        </profile>
+        <profile name="Side" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="fb90-2bb3-bb64-278f">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-2(AV8)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">3-4(AV8)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2">5-6(AV8)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rear" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="f5f8-9a60-7e71-e5a6">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-2(AV8)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">3(AV6)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2">4-6(AV8)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="182mm Y1(t)(a) Crynstof" id="e29a-b912-775c-fc89" hidden="false" type="profile" targetId="e9f4-23f1-8dfc-cd60"/>
+        <infoLink name="Turret" id="9d53-4def-038b-b02a" hidden="false" type="rule" targetId="31d3-d762-21af-d0b6"/>
+        <infoLink name="Heavy Shotgun" id="10e7-c293-23a5-25ba" hidden="false" type="profile" targetId="06b8-9d5c-afb6-8a56"/>
+      </infoLinks>
+    </selectionEntry>
   </selectionEntries>
   <categoryEntries>
     <categoryEntry name="is-Caerten" id="a039-ed99-66e0-8e2e" hidden="true">
@@ -825,5 +929,7 @@
     </categoryEntry>
     <categoryEntry name="Trench Raiders" id="ddb9-4576-88bf-8890" hidden="true"/>
     <categoryEntry name="Pathfinder" id="2d43-fa3e-9335-e7e9" hidden="true"/>
+    <categoryEntry name="Tractor" id="32c4-a257-220a-291e" hidden="false"/>
+    <categoryEntry name="Big Game Hunt" id="81f1-19dd-f6a1-99e9" hidden="false"/>
   </categoryEntries>
 </catalogue>

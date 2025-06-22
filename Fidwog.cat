@@ -4,11 +4,13 @@
     <forceEntry name="Fidwog" id="cf44-1b12-f1c7-9638" hidden="false">
       <categoryLinks>
         <categoryLink name="Fidwog" hidden="false" id="6027-a6f6-c720-b646" targetId="2911-f5b2-5e7e-e73e"/>
+        <categoryLink name="Tractor" hidden="false" id="8703-3d89-a4b3-6897" targetId="1dcc-c2f3-db5a-3870" type="categoryEntry"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
   <categoryEntries>
     <categoryEntry name="Fidwog" id="2911-f5b2-5e7e-e73e" hidden="false"/>
+    <categoryEntry name="Tractor" id="1dcc-c2f3-db5a-3870" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Gaefyn" hidden="false" id="68f1-18d2-89d8-805e" defaultAmount="3" sortIndex="1">
@@ -397,6 +399,108 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Fynrydhad" hidden="false" id="468d-ec95-9443-e719" sortIndex="13">
+      <categoryLinks>
+        <categoryLink targetId="1dcc-c2f3-db5a-3870" id="4565-a9ea-0ec4-51eb" primary="true" name="Tractor"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="95"/>
+      </costs>
+      <profiles>
+        <profile name="Fynrydhad" typeId="ea3c-db9f-efca-08c6" typeName="Tractor" hidden="false" id="e0ea-a88d-7732-b363">
+          <characteristics>
+            <characteristic name="Crew" typeId="9746-8b0c-4b5c-f7c6">1</characteristic>
+            <characteristic name="Sk" typeId="9643-2c58-f2b5-f094">10</characteristic>
+            <characteristic name="MA" typeId="b025-c0ec-34fe-b9b8">5</characteristic>
+            <characteristic name="Abilities" typeId="ab94-4da1-0332-cdf2">Squad Tractor, Turret</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fynrydhad" typeId="690f-2134-1f14-ad10" typeName="Location (Damage Points)" hidden="false" id="7e16-f692-50d6-9f4f" noindex="false">
+          <characteristics>
+            <characteristic name="Thread" typeId="3f1f-af3e-776d-94e1">3</characteristic>
+            <characteristic name="Hull" typeId="1043-1e97-fc02-e72c">2</characteristic>
+            <characteristic name="Engine" typeId="c217-e1db-75f6-df2b">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Front" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="20ed-bc19-84a7-99a1">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-2(AV6)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">3-6(AV7)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2"/>
+          </characteristics>
+        </profile>
+        <profile name="Side" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="c731-4287-e7ad-724e">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-3(AV6)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">4-5(AV7)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2">6(AV5)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rear" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="3859-0762-022f-d1c2">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-2(AV6)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">3(AV6)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2">4-6(AV5)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="M8-c MMG" id="87c6-7a2c-c09f-5b0c" hidden="false" type="profile" targetId="c29b-6300-59da-4b52"/>
+        <infoLink name="Turret" id="81da-90f9-dfcb-58db" hidden="false" type="rule" targetId="31d3-d762-21af-d0b6"/>
+        <infoLink name="Squad Tractor" id="8820-3a80-3c2d-f5cc" hidden="false" type="rule" targetId="1686-0a08-2d32-240e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Fynrydhad (Addendum)" hidden="false" id="d523-c483-f956-8853" defaultAmount="1" sortIndex="12">
+      <categoryLinks>
+        <categoryLink targetId="1dcc-c2f3-db5a-3870" id="9ed0-e03b-ae71-a381" primary="true" name="Tractor"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="70"/>
+      </costs>
+      <profiles>
+        <profile name="Fynrydhad" typeId="ea3c-db9f-efca-08c6" typeName="Tractor" hidden="false" id="6d9b-1a8b-5d5c-2fc5">
+          <characteristics>
+            <characteristic name="Crew" typeId="9746-8b0c-4b5c-f7c6">1</characteristic>
+            <characteristic name="Sk" typeId="9643-2c58-f2b5-f094">12</characteristic>
+            <characteristic name="MA" typeId="b025-c0ec-34fe-b9b8">5</characteristic>
+            <characteristic name="Abilities" typeId="ab94-4da1-0332-cdf2">Squad Tractor, Turret</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fynrydhad" typeId="690f-2134-1f14-ad10" typeName="Location (Damage Points)" hidden="false" id="fde6-a62d-7962-430f" noindex="false">
+          <characteristics>
+            <characteristic name="Thread" typeId="3f1f-af3e-776d-94e1">3</characteristic>
+            <characteristic name="Hull" typeId="1043-1e97-fc02-e72c">2</characteristic>
+            <characteristic name="Engine" typeId="c217-e1db-75f6-df2b">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Front" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="7ea5-45d7-c9a3-22ac">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-2(AV5)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">3-6(AV6)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2"/>
+          </characteristics>
+        </profile>
+        <profile name="Side" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="eed5-8762-7b1f-f1fe">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-3(AV5)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">4-5(AV6)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2">6(AV4)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rear" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="03cb-e1af-4be7-1302">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-2(AV5)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">3(AV6)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2">4-6(AV4)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="M8-c MMG" id="1892-4e17-904a-256d" hidden="false" type="profile" targetId="c29b-6300-59da-4b52"/>
+        <infoLink name="Turret" id="0b53-6b12-1250-ebbc" hidden="false" type="rule" targetId="31d3-d762-21af-d0b6"/>
+        <infoLink name="Squad Tractor" id="d54f-09bf-01e0-fdd6" hidden="false" type="rule" targetId="1686-0a08-2d32-240e"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
 </catalogue>

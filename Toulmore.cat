@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="67ff-6041-2c4d-aa8f" name="Toulmore" gameSystemId="sys-e004-1281-bc3b-277e" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="67ff-6041-2c4d-aa8f" name="Toulmore" gameSystemId="sys-e004-1281-bc3b-277e" gameSystemRevision="1" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Rhyfler (Bogen)" hidden="false" id="5543-0653-8859-87a4" defaultAmount="5" sortIndex="1">
       <categoryLinks>
@@ -346,15 +346,67 @@
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Twaenhyr" hidden="false" id="f720-46ab-3232-8d71">
+      <categoryLinks>
+        <categoryLink targetId="fdfe-c015-1059-ded7" id="ba98-790d-d5f0-17a9" primary="true" name="Tractor"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="30c9-0a6f-d43c-0271" value="180"/>
+      </costs>
+      <profiles>
+        <profile name="Twaenhyr" typeId="ea3c-db9f-efca-08c6" typeName="Tractor" hidden="false" id="fbba-1b25-30e6-5316">
+          <characteristics>
+            <characteristic name="Crew" typeId="9746-8b0c-4b5c-f7c6">3</characteristic>
+            <characteristic name="Sk" typeId="9643-2c58-f2b5-f094">12</characteristic>
+            <characteristic name="MA" typeId="b025-c0ec-34fe-b9b8">5</characteristic>
+            <characteristic name="Abilities" typeId="ab94-4da1-0332-cdf2">Turret</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Twaenhyr" typeId="690f-2134-1f14-ad10" typeName="Location (Damage Points)" hidden="false" id="cbdd-fc96-3066-daaf" noindex="false">
+          <characteristics>
+            <characteristic name="Thread" typeId="3f1f-af3e-776d-94e1">3</characteristic>
+            <characteristic name="Hull" typeId="1043-1e97-fc02-e72c">3</characteristic>
+            <characteristic name="Engine" typeId="c217-e1db-75f6-df2b">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Front" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="4f38-9fd9-daa4-bcca">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-2(AV7)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">3-6(AV7)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2"/>
+          </characteristics>
+        </profile>
+        <profile name="Side" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="f17e-31a3-78b7-2c53">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-2(AV7)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">3-6(AV7)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2"/>
+          </characteristics>
+        </profile>
+        <profile name="Rear" typeId="393b-71fd-81f8-eed6" typeName="Armor" hidden="false" id="fb76-35b0-03bc-856d">
+          <characteristics>
+            <characteristic name="Tread" typeId="8587-e71c-d3cf-43d1">1-2(AV7)</characteristic>
+            <characteristic name="Hull" typeId="26a4-5f7d-bc0b-7a9c">3-4(AV7)</characteristic>
+            <characteristic name="Engine" typeId="d1ae-1dfe-97e1-32f2">5-6(AV6)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="72mm TLZ-RT" id="327f-9c91-e81e-3b75" hidden="false" type="profile" targetId="60e6-a56d-5139-837d"/>
+        <infoLink name="Turret" id="c1e5-cac4-ce8b-5cbf" hidden="false" type="rule" targetId="31d3-d762-21af-d0b6"/>
+      </infoLinks>
+    </selectionEntry>
   </selectionEntries>
   <forceEntries>
     <forceEntry name="Toulmore" id="c5cc-e4b9-87dd-d9a9" hidden="false">
       <categoryLinks>
         <categoryLink name="Toulmore" hidden="false" id="5a56-28e9-1378-5520" targetId="2cd2-0680-b60d-feb0"/>
+        <categoryLink name="Tractor" hidden="false" id="9c9a-2fc1-c267-98cc" targetId="fdfe-c015-1059-ded7" type="categoryEntry"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
   <categoryEntries>
     <categoryEntry name="Toulmore" id="2cd2-0680-b60d-feb0" hidden="false"/>
+    <categoryEntry name="Tractor" id="fdfe-c015-1059-ded7" hidden="false"/>
   </categoryEntries>
 </catalogue>
