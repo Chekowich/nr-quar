@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="7b92-85b6-2d42-d54c" name="Western Arnyara" gameSystemId="sys-e004-1281-bc3b-277e" gameSystemRevision="5" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
-    <selectionEntry type="model" import="true" name="Able First Class" hidden="false" id="17a1-7788-a3cd-a3fe" defaultAmount="6" sortIndex="5">
+    <selectionEntry type="model" import="true" name="Able First Class" hidden="false" id="17a1-7788-a3cd-a3fe" defaultAmount="0" sortIndex="5">
       <categoryLinks>
         <categoryLink targetId="87f5-9880-0073-312f" id="f055-e695-6af7-31fa" primary="true" name="Aber"/>
       </categoryLinks>
